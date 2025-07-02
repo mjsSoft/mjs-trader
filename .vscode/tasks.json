@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "conan: install deps Debug",
+			"type": "shell",
+			"command": "conan install . --output-folder=. --build=missing -s build_type=Debug",
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "conan install required dependencies"
+		},
+		{
+			"label": "conan: install deps Release",
+			"type": "shell",
+			"command": "conan install . --output-folder=. --build=missing -s build_type=Release",
+			"group": "build",
+			"problemMatcher": [],
+			"detail": "conan install required dependencies"
+		}
+	]
+}
